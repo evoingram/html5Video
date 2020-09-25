@@ -65,6 +65,8 @@ I understand anybody might just come across this repo, but if you are a Lambda s
         <!-- Main -->
         <section id="main">
             <section class="video-section">
+                <h2 id="video-player-title" class="video-player-title">Video Player HTML Skeleton</h2>
+                <br />
             </section>
         </section>
 
@@ -77,6 +79,7 @@ I understand anybody might just come across this repo, but if you are a Lambda s
 </body>
 ```
 
+- Save it.
 - So now we are going to write some JavaScript.  I'm not going to explain this part because ya'll learned it in school!
 - Just inside your closing body tag, add the following:
 
@@ -109,22 +112,138 @@ window.onclick = (event) => {if (event.target == shareModal) {shareModal.style.d
 
 ![How To Add Flag to Browser Execution](img/howto/file-access.png)
 
-- 
+- Now we're going to go back to the HTML index file and add the HTML code for the video, chapters, and subtitles.  Add the following under the ```<br />``` tag inside the ```video-section``` class section.  This part is going to hold your video player, its controls, and the HTML for the chapters and captions.
 
 ```HTML
-
+<figure id='media-player' class="media-player">
+    <div id="player-controls" class="player-controls">
+        <div id='media-controls' class="media-controls">
+        </div>
+    </div>
+    <div id='media-chapters'>
+        <figcaption>
+            <ol id="chapters" class="chapters">
+            </ol>
+        </figcaption>
+    </div>
+    <div id="share-modal" class="share-modal">
+        <div class="share-modal-content">
+            <div class="share-close">X</div>
+            <div class="share-modal-body">
+            </div>
+        </div>
+    </div>
+</figure>
 ```
 
-```HTML
+- Next we add the actual video player.  Above the div with id ```media-controls```, inside the div with id ```player-controls```, add the video player.  
+- The first line of this section opens the video tag.  
+- ```controls``` specifies that the video controls should be displayed.
+- Preload ```auto``` specifies if and how the video should be loaded when the page loads.  You may select from ```auto```, ```metadata```, or ```none```.
+- [Other possible attributes for the ```video``` tag](https://www.w3schools.com/TAgs/tag_video.asp).
 
+<br />
+<br />
+
+- The second and third lines are the video's source, where to get the file and what type of file it is.  You may have only one of these if you have only one format of a certain video.  I put two here to show that you may have multiples if you wish.
+- [Other possible attributes for the ```source``` tag](https://www.w3schools.com/TAgs/tag_source.asp).
+
+<br />
+<br />
+
+- Then there are two tracks, one for chapters (the right-hand menu) and one for subtitles (closed captioning).
+- ```kind``` specifies what type of text track it is.  The available options for this are ```captions```, ```chapters```, ```descriptions```, ```metadata```, or ```subtitles```.  So you will need two tracks if you want BOTH captions and chapters.
+- ```label``` signifies the title of the text track.
+- ```src``` specifies the URL to the file location of that track.
+- ```srclang``` signifies the text data language, required if ```kind='subtitles'```.
+- ```default``` being enabled means that, if the user's preferences do not say whether to turn it on or off, enable it.
+
+<br />
+<br />
+
+- Close the video tag.
+
+```HTML
+<video
+    id='media-video'
+    controls
+    preload="auto"
+    class="media-video" >
+    <source src='img/SampleVideo1.mp4' type='video/mp4'>
+    <source src='img/SampleVideo1.webm' type='video/webm'>
+    <track kind="chapters"
+        label="Projects"
+        src="img/chapters.vtt"
+        srclang="en"
+        onload="displayChapters(this)"
+        default />  
+    <track kind="subtitles"
+        srclang="en"
+        src="img/captions.vtt"  
+        label="English"
+        default >
+</video>
 ```
 
-```HTML
+- Next, below your closing ```</video>``` tag, still inside the div with id ```player-controls```, add the following.  This will contain the progress bar, the playback speed bar, and the actual player buttons.
+- The progress bar is just an empty div with another empty div inside of it that will represent the filling portion of the progress bar after we've styled it with CSS.
+- The input field here is the guts of the playback speed bar.  Its type is ```range``` and its ```min``` and ```max``` signify the max and min speeds you want the player to be able to play at.  ```step``` signifies how much each individual step should go up in the range, and ```value``` specifies what the range's value is currently set at.  So right now, the player will play at 1x speed, normal regular speed.
+- Then we have an empty div representing what will shortly be the player buttons.
 
+```HTML
+<div id='media-controls' class="media-controls">
+    <div class="progress">
+        <div class="progress__filled"></div>
+    </div>
+    <input
+        id="playbackSpeed"
+        type="range"
+        name="playbackRate"
+        class="player__slider"
+        min="0.5"
+        max="2"
+        step="0.1"
+        value="1">
+    <div id="media-buttons" class="media-buttons">
+    </div>
+</div>
 ```
 
-```HTML
+- Next, we'll add the actual buttons inside the div with id ```media-buttons```, each with their own onclick attribute to run the respective function on click.  Ensure each image has an ```alt``` attribute.  Notice there is a button for each of ```replay```, ```play/pause```, ```stop```, ```volume up```, ```volume down```, ```mute/unmute```, ```share```, and ```cc```, and six of the eight each run a separate function, which we will write shortly.
 
+```HTML
+<div id='replay-button' class='replay icon'
+    title='replay' onclick='replayMedia();'>
+    <img src="img/png/replay.png" alt="replay" />
+</div>
+<div id='play-pause-button' class='play icon'
+    title='play' onclick='togglePlayPause();'>
+    <img id='play-img' src="img/png/play.png" alt="play/pause" />
+</div>
+<div id='stop-button' class='stop icon'
+    title='stop' onclick='stopPlayer();'>
+    <img src="img/png/stop.png" alt="stop" />
+</div>
+<div id='volume-inc-button' class='volume-plus icon'
+    title='increase volume' onclick='changeVolume("+");'>
+    <img src="img/png/plus.png" alt="volume up" />
+</div>
+<div id='volume-dec-button' class='volume-minus icon'
+    title='decrease volume' onclick='changeVolume("-");'>
+    <img src="img/png/minus.png" alt="volume down" />
+</div>
+<div id='mute-button' class='mute icon'
+    title='mute' onclick='toggleMute("true");'>
+    <img id='mute-img' src="img/png/mute.png" alt="mute/unmute" />
+</div>
+<div id='share-button' class='icon'
+    title='share on social media'>
+    <img id='share-img' src="img/png/share.png" alt="share on social media" />
+</div>
+<div id='cc-button' class='icon'
+    title='closed captioning'>
+    <img id='cc-img' src="img/png/cc.png" alt="toggle closed captioning" />
+</div>
 ```
 
 ```HTML

@@ -51,11 +51,9 @@
                             <track label="English" kind="subtitles" srclang="en" src="img/captions.vtt" default>
                         </video>
                         <div id='media-controls' class="media-controls">
-                            <div id="progress-label" class="bar-label">Video Progress:</div>
                             <div class="progress">
                                 <div class="progress__filled"></div>
                             </div>
-                            <div id="speed-label" class="bar-label">Speed:</div>
                             <input 
                                 id="playbackSpeed" 
                                 type="range" 
@@ -86,7 +84,7 @@
                                         title='decrease volume' onclick='changeVolume("-");'>
                                         <img src="img/png/minus.png" alt="volume down" />
                                 </div>	
-                                <div id='mute-button' class='mute icon buttonDiv' 
+                                <div id='mute-button' class='mute icon' 
                                         title='mute' onclick='toggleMute("true");'>
                                         <img id='mute-img' src="img/png/mute.png" alt="mute/unmute" />
                                 </div>		
