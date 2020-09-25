@@ -2,6 +2,9 @@
 
 I understand anybody might just come across this repo and that's totally fine, but if you are a Lambda student or staff, I ask that you please don't share this with the general public.   Lambda folks need every leg up they can get!
 
+[Example](http://www.ericaingram.com)
+
+
 ## What You Need
 
 - your favorite coding editor
@@ -20,5 +23,3 @@ I understand anybody might just come across this repo and that's totally fine, b
 ## Notes
 
 This repo is intended to show how I made my project walkthrough video and how you can repeat the steps I took to make your own video.
-
-[Here's what I created by doing this project.](http://www.ericaingram.com)
