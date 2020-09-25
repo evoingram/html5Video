@@ -8,7 +8,7 @@ Let's say you have a video, and you want to make some minor edits to it.  This p
 ## Table of Contents
 
 - [Notes](#Notes)
-- [Directions for Creating HTML5 Video Player](#Directions-for-Creating-HTML5-Video-Player)
+- [What You Need](#What-You-Need)
   - [Setup](#Setup)
   - [index.html Part 1](#index.html-Part-1)
   - [index.js](#index.js)
@@ -28,11 +28,8 @@ Let's say you have a video, and you want to make some minor edits to it.  This p
 
 ## What You Need
 
-- your favorite coding editor
-- photo editing software (making buttons, nothing major)
-- Premiere Pro or your favorite editing software (optional)
-- PowerPoint or your favorite presentation software (optional)
-- Zoom, Microsoft Teams, or your favorite recording software (optional)
+- your recorded video clip(s)
+- Premiere Pro or your favorite editing software
 
 ## Video Editing Tasks
 

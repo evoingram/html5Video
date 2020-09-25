@@ -2,14 +2,10 @@
 
 I understand anybody might just come across this repo, but if you are a Lambda student or staff, I ask that you please don't share this with the general public.   Lambda folks need every leg up they can get!
 
-## What You Need
-
-- your favorite coding editor
-- photo editing software (making buttons, nothing major)
-
 ## Table of Contents
 
 - [Notes](#Notes)
+- [What You Need](#What-You-Need)
 - [Directions for Creating HTML5 Video Player](#Directions-for-Creating-HTML5-Video-Player)
   - [Setup](#Setup)
   - [index.html Part 1](#index.html-Part-1)
@@ -24,6 +20,11 @@ I understand anybody might just come across this repo, but if you are a Lambda s
 
 - All SVGs were downloaded from Pixabay and are in Creative Commons, so you are free to do w/e with them.  They are not mine.
 - The button template files are created by me, but you are free to do whatever with it.  It's just a base you can use to start making a button, although of course you don't have to use it if you don't want to.
+
+## What You Need
+
+- your favorite coding editor
+- photo editing software (making buttons, nothing major)
 
 ## Directions for Creating HTML5 Video Player
 

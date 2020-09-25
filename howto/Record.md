@@ -16,14 +16,14 @@ I understand anybody might just come across this repo, but if you are a Lambda s
 
 ## What You Need
 
-- your favorite coding editor
-- your favorite browser
+- your favorite coding editor (optional)
+- your favorite browser (optional)
 - deployed projects you want to show off
 - code files and chunks of code you want to show off
 - script for this video
-- PowerPoint or your favorite presentation software (optional)
-- Zoom, Microsoft Teams, or your favorite recording software (optional)
-- This is ***a lot*** easier with two screens.
+- PowerPoint or your favorite presentation software
+- Zoom, Microsoft Teams, or your favorite recording software
+- This is ***a lot*** easier with two screens.  If you do not have two screens, you will need your script on paper or on your phone or basically not on the screen you're sharing.
 
 ## Directions
 
