@@ -1,0 +1,72 @@
+
+@font-face {
+    font-family: 'Cascadia';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/CascadiaCode.ttf');
+    src: local('CascadiaCode'), local('CascadiaCode'),
+        url('../fonts/CascadiaCode.woff2') format('woff2'),
+        url('../fonts/CascadiaCode.ttf') format('truetype')
+    ;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Barlow.ttf');
+    src: local('Barlow'), local('Barlow'),
+        url('../fonts/Barlow.ttf') format('truetype'),
+    ;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/SourceSansPro.ttf');
+    src: local('SourceSansPro'), local('SourceSansPro'),
+        url('../fonts/SourceSansPro.ttf') format('truetype')
+    ;
+}
+
+body {
+    background-color:#000000;
+    color: #ffffff;
+    font-family: "Cascadia";
+    font-size: 2em;
+    line-height: 1.65;
+    max-width: 75%;
+    width: 75%;
+    margin: 0 auto;
+    padding: 0 2em;
+    opacity: 1;
+    filter: none;
+}
+
+
+/* Buttons */
+
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+    color: #ffffff;
+    border-radius: 100%;
+    display: inline-block;
+    padding: 0.5em;
+    border: solid 1px rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+.close{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 2px 16px;
+    color: white;
+    justify-content: right;
+    border: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}

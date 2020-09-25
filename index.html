@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>How To Make an HTML5 Video Player, by Erica Ingram</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/media-player.css" />
+    <link rel="stylesheet" href="css/subtitles.css" />
+
+        <!-- favicons -->
+    <link rel="icon" href="img/myAvatar.png" sizes="32x32" />
+    <link rel="icon" href="img/myAvatar.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="img/myAvatar.png" sizes="180x180" />
+
+    <meta name="keywords"
+        content="HTML5 video player" />
+
+    <meta name="description"
+        content="skeleton for how-to on making a video player">
+
+</head>
+
+<body>
+
+        <!-- Header -->
+        <header id="header">
+            <h1>How To Make an HTML5 Video Player, by Erica Ingram</h1>
+        </header>
+
+        <!-- Main -->
+        <section id="main">
+            <section class="video-section">
+                <h2 id="video-player-title" class="video-player-title">Video Player HTML Skeleton</h2>
+                <!-- Video Player & Video -->
+                <br />
+                <figure id='media-player' class="media-player">
+                    <div id="player-controls" class="player-controls">
+                        <video id='media-video' controls preload="auto" class="media-video">
+                            <source src='img/SampleVideo1.mp4' type='video/mp4'>
+                            <source src='img/SampleVideo1.webm' type='video/webm'>
+                            <track kind="chapters" 
+                                label="Projects" 
+                                src="img/chapters.vtt" 
+                                srclang="en" 
+                                default 
+                                onload="displayChapters(this)" />  
+                            <track label="English" kind="subtitles" srclang="en" src="img/captions.vtt" default>
+                        </video>
+                        <div id='media-controls' class="media-controls">
+                            <div id="progress-label" class="bar-label">Video Progress:</div>
+                            <div class="progress">
+                                <div class="progress__filled"></div>
+                            </div>
+                            <div id="speed-label" class="bar-label">Speed:</div>
+                            <input 
+                                id="playbackSpeed" 
+                                type="range" 
+                                name="playbackRate" 
+                                class="player__slider" 
+                                min="0.5" 
+                                max="2" 
+                                step="0.1" 
+                                value="1">
+                            <div id="media-buttons" class="media-buttons">
+                                <div id='replay-button' class='replay icon' 
+                                        title='replay' onclick='replayMedia();'>
+                                        <img src="img/png/replay.png" alt="replay" />
+                                </div>	
+                                <div id='play-pause-button' class='play icon' 
+                                        title='play' onclick='togglePlayPause();'>
+                                        <img id='play-img' src="img/png/play.png" alt="play/pause" />
+                                </div>
+                                <div id='stop-button' class='stop icon' 
+                                        title='stop' onclick='stopPlayer();'>
+                                        <img src="img/png/stop.png" alt="stop" />
+                                </div>
+                                <div id='volume-inc-button' class='volume-plus icon' 
+                                        title='increase volume' onclick='changeVolume("+");'>
+                                        <img src="img/png/plus.png" alt="volume up" />
+                                </div>	
+                                <div id='volume-dec-button' class='volume-minus icon' 
+                                        title='decrease volume' onclick='changeVolume("-");'>
+                                        <img src="img/png/minus.png" alt="volume down" />
+                                </div>	
+                                <div id='mute-button' class='mute icon buttonDiv' 
+                                        title='mute' onclick='toggleMute("true");'>
+                                        <img id='mute-img' src="img/png/mute.png" alt="mute/unmute" />
+                                </div>		
+                                <div id='share-button' class='icon' 
+                                        title='share on social media'>
+                                        <img id='share-img' src="img/png/share.png" alt="share on social media" />
+                                </div>	
+                                <div id='cc-button' class='icon' 
+                                        title='closed captioning'>
+                                        <img id='cc-img' src="img/png/cc.png" alt="toggle closed captioning" />
+                                </div>		
+                            </div>
+                        </div>
+                    </div>
+                    <div id='media-chapters'>
+                        <figcaption>
+                            <ol id="chapters" class="chapters">
+                            </ol>
+                        </figcaption>
+                    </div>
+                    <div id="share-modal" class="share-modal">
+                        <div class="share-modal-content">
+                            <div class="share-close">X</div>
+                            <div class="share-modal-body">
+                                <div id='facebook' 
+                                     title='Share on Facebook'>
+                                     <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.ericaingram.com" target="_blank"  rel="noopener noreferrer">
+                                        <img src="img/png/facebook.png" alt="Share on Facebook" />
+                                    </a>
+                                </div>	
+                                <div id='twitter'
+                                        title='Share on Twitter'>
+                                    <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20cool%20project%20walkthrough%20and%20custom%20video%20player%20by%20Erica%20Ingram%20at%20http%3A//www.ericaingram.com." target="_blank"  rel="noopener noreferrer">
+                                        <img src="img/png/twitter.png" alt="Share on Twitter" />
+                                    </a>
+                                </div>
+                                <div id='linkedin'
+                                        title='Share on LinkedIn'>
+                                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.ericaingram.com&title=Cool%20Project%20Walkthrough%20%26%20Custom%20Video%20Player&summary=Check%20out%20this%20cool%20project%20walkthrough%20and%20custom%20video%20player%20by%20Erica%20Ingram.&source=" target="_blank"  rel="noopener noreferrer">
+                                            <img src="img/png/linkedin.png" alt="Share on LinkedIn" />
+                                        </a>
+                                </div>
+                                <div id='email'
+                                        title='Share via email' >
+                                        <a href="mailto:?subject=cool%20project%20walkthrough%20%26%20custom%20video&body=Check%20out%20this%20cool%20project%20walkthrough%20and%20custom%20video%20player%20by%20Erica%20Ingram%20at%20http%3A//www.ericaingram.com." target="_blank"  rel="noopener noreferrer">
+                                        <img src="img/png/email.png" alt="Share via email" />
+                                    </a>
+                                </div>	
+                            </div>	
+                        </div>
+                    </div>
+                </figure>
+            </section>
+        </section>
+    <script src="js/media-player.js" ></script>
+    <script src="js/tracks.js" ></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
