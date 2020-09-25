@@ -5,10 +5,10 @@ I understand anybody might just come across this repo and that's totally fine, b
 ## What You Need
 
 - your favorite coding editor
-- photo editing software (making buttons, nothing major)
-- Premiere Pro or your favorite editing software (optional)
-- PowerPoint or your favorite presentation software (optional)
-- Zoom, Microsoft Teams, or your favorite recording software (optional)
+- photo editing software (making player buttons, nothing major)
+- Premiere Pro or your favorite editing software
+- PowerPoint or your favorite presentation software
+- Zoom, Microsoft Teams, or your favorite recording software
 
 ## Table of Contents
 
