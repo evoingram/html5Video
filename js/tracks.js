@@ -15,7 +15,7 @@ subtitleButton.addEventListener('click', (e) => {
     if (subtitles) {subtitles.mode = (subtitles.mode == 'showing' ? 'hidden' : 'showing');}
 });
 
-function displayChapters(trackElement){
+function displayChapters(trackElement) {
     if ((trackElement) && (textTrack = trackElement.track)){
         if (textTrack.kind === "chapters"){
             textTrack.mode = 'hidden';
