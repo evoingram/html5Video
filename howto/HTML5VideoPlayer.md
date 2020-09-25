@@ -131,7 +131,7 @@ window.onclick = (event) => {if (event.target == shareModal) {shareModal.style.d
 --allow-file-access-from-files
 ```
 
-![How To Add Flag to Browser Execution](howto/file-access.png)
+![How To Add Flag to Browser Execution](file-access.png)
 
 ### index.html Part 2
 
