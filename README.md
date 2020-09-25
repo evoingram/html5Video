@@ -22,4 +22,4 @@ I understand anybody might just come across this repo and that's totally fine, b
 
 ## Notes
 
-This repo is intended to show how I made my project walkthrough video and how you can repeat the steps I took to make your own video.
+This repo is intended to show how I made my project walkthrough video and how you can repeat the steps I took to make your own video.  It also contains a finished working HTML5 video player in addition to instructions on how to make one.
