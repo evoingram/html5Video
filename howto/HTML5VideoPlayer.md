@@ -13,7 +13,6 @@ I understand anybody might just come across this repo, but if you are a Lambda s
   - [Browser Flag](#Browser-Flag)
   - [index.html Part 2](#index.html-Part-2)
   - [media-player.js](#media-player.js)
-  - [tracks.js](#tracks.js)
 - [Resources for Making a Video Player](#Resources-for-Making-a-Video-Player)
 
 ## Notes
@@ -35,7 +34,7 @@ I understand anybody might just come across this repo, but if you are a Lambda s
 - Download the fonts you want to use for this player and put them in the ```fonts``` folder.
 - In the main directory, make an ```index.html``` skeleton which you will be editing later.
 - In the ```css``` folder, create three files:  ```index.css```, ```media-player.css```, and ```subtitles.css```.
-- In the ```js``` folder, create three files:  ```index.js``` and ```media-player.js```, and ```tracks.js```.
+- In the ```js``` folder, create two files:  ```index.js``` and ```media-player.js```.
 - in the ```img``` folder, create two files:  ```captions.vtt``` and ```chapters.vtt``` (make a text file and just change the whole thing, including extension).  These two files ***MUST*** be the ***same directory*** as your video files, no exceptions!!
 - Create and style your button images with your favorite photo editing software.  Again, the button template files are just a base you can use to start making a button, although of course you don't have to use it if you don't want to.  
   - There are also white SVGs provided for the middle portion of the button image from Pixabay if you would like to use those.  Once you get the player up and running, you will be able to use regular CSS to style the player in any way you want.
@@ -102,7 +101,6 @@ I understand anybody might just come across this repo, but if you are a Lambda s
 
 ```HTML
     <script src="js/media-player.js" ></script>
-    <script src="js/tracks.js" ></script>
     <script src="js/index.js"></script>
 ```
 
@@ -518,13 +516,7 @@ var playPauseBtn = document.getElementById('play-pause-button');
     }
     ```
 
-- Save and close ```media-player.js```.
-
-### tracks.js
-
-- Now on to ```tracks.js```.  This is a file that holds the JavaScript code for the chapters and captions.  You will see a lot more comments in the code in this file and I will explain what each piece does since this is likely the part that will be somewhat unfamiliar.  So far, everything we've done should be fairly familiar to you.
-
-- Add the following to the top of the empty file:
+- Now, we'll work on the captions and chapters.  Directly above the function ```initializeMediaPlayer``` in ```media-player.js```, add the following:
 
 ```JavaScript
 // initialize text track variable
@@ -550,7 +542,7 @@ subtitleButton.addEventListener('click', (e) => {
 });
 ```
 
-- Add the following to the bottom of ```tracks.js```.
+- Add the following to the bottom of ```media-player.js```.
 
 ```JavaScript
 // 
@@ -559,7 +551,7 @@ var chapterList = document.getElementById("chapters");
 var trackElement = video.getElementsByTagName("track")[0];
 ```
 
-- Now, add a function to display chapters in between what you just put in ```tracks.js```.
+- Now, right above the two lines you just put at the bottom of ```media-player.js```, add a function to display chapters.
 
 ```JavaScript
 // function to display chapters; since it uses the 'this' keyword, we can't put it in arrow form.
@@ -615,6 +607,10 @@ function displayChapters(trackElement) {
     }
 }
 ```
+
+- Now you should have a working player!
+
+![Picture of Final Video Player](15-finalVideoPlayer.png)
 
 ## Resources for Making a Video Player
 
