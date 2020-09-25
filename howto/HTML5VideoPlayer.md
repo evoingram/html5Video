@@ -163,19 +163,17 @@ Close and restart your browser once you've added the flag.
 </figure>
 ```
 
-- Next we add the actual video player.  Above the div with id ```media-controls```, inside the div with id ```player-controls```, add the video player.  
+- Next we add the actual video player, which is the next code block.  Above the div with id ```media-controls```, inside the div with id ```player-controls```, add the video player.
 - The first line of this section opens the video tag.  
 - ```controls``` specifies that the video controls should be displayed.
 - Preload ```auto``` specifies if and how the video should be loaded when the page loads.  You may select from ```auto```, ```metadata```, or ```none```.
 - [Other possible attributes for the ```video``` tag](https://www.w3schools.com/TAgs/tag_video.asp).
 
 <br />
-<br />
 
 - The second and third lines are the video's source, where to get the file and what type of file it is.  You may have only one of these if you have only one format of a certain video.  I put two here to show that you may have multiples if you wish.
 - [Other possible attributes for the ```source``` tag](https://www.w3schools.com/TAgs/tag_source.asp).
 
-<br />
 <br />
 
 - Then there are two tracks, one for chapters (the right-hand menu) and one for subtitles (closed captioning).
@@ -185,7 +183,6 @@ Close and restart your browser once you've added the flag.
 - ```srclang``` signifies the text data language, required if ```kind='subtitles'```.
 - ```default``` being enabled means that, if the user's preferences do not say whether to turn it on or off, enable it.
 
-<br />
 <br />
 
 - Close the video tag.
