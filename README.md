@@ -9,7 +9,7 @@ I understand anybody might just come across this repo and that's totally fine, b
 
 - your favorite coding editor
 - photo editing software (making player buttons, nothing major)
-- Premiere Pro or your favorite editing software
+- Premiere Pro or your favorite video editing software
 - PowerPoint or your favorite presentation software
 - Zoom, Microsoft Teams, or your favorite recording software
 
