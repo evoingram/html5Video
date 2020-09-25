@@ -14,9 +14,9 @@ I understand anybody might just come across this repo and that's totally fine, b
 
 - [How to Create an HTML5 Video Player for your Portfolio](howto/HTML5VideoPlayer.md)
   - [Resources for Making a Video Player](howto/HTML5VideoPlayer.md#Resources-for-Making-a-Video-Player)
-- [Minor Video Editing Tasks in Premiere Pro](howto/MinorEdits.md)
-- [How To Set Up Screens to Record](howto/Record.md)
+- [Video Editing Tasks in Premiere Pro](howto/MinorEdits.md)
+- [Guide to Recording](howto/Record.md)
 
 ## Notes
 
-- TBD
+This repo is intended to show how I made my project walkthrough video and how you can repeat the steps I took to make your own video. 
