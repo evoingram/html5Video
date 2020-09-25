@@ -125,7 +125,11 @@ window.onclick = (event) => {if (event.target == shareModal) {shareModal.style.d
 
 ### Browser Flag
 
-- ***VERY IMPORTANT***:  When you are working on this video player locally, make sure you have the following flag in the browser you are testing this in.  IDK what this flag is on non-Chromium browsers, so you will have to research it on your own if you are not using a Chromium-based browser (new Edge, Chrome, Brave, etc.).  The reason for this is because, if you don't do it, it's going to not let you read chapter or caption VTT files locally later when you go to use them.  Close and restart your browser once you've added the flag.
+- ***VERY IMPORTANT***:  When you are working on this video player locally, make sure you have the following flag in the browser you are testing this in.  Right click on the app shortcut and go to properties, then add the flag to the ```target``` field at the end.  
+
+IDK what this flag is on non-Chromium browsers, so you will have to research it on your own if you are not using a Chromium-based browser (new Edge, Chrome, Brave, etc.).  The reason for this is because, if you don't do it, it's going to not let you read chapter or caption VTT files locally later when you go to use them.  
+
+Close and restart your browser once you've added the flag.
 
 ```pseudocode
 --allow-file-access-from-files
