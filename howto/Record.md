@@ -6,9 +6,10 @@ I understand anybody might just come across this repo, but if you are a Lambda s
 - [Notes](#Notes)
 - [What You Need](#What-You-Need)
 - [Directions](#Directions)
-- [Recording on Different Platforms](#Recording-on-Different-Platforms)
+- [Recording](#Recording)
   - [Zoom](#Zoom)
   - [Microsoft Teams](#Microsoft-Teams)
+- [Resources for Recording](#Resources-for-Recording)
 
 ## Notes
 
@@ -33,7 +34,7 @@ I understand anybody might just come across this repo, but if you are a Lambda s
 - Suggestion:  Write your outline and script in a separate file and don't paste it into the notes section of PowerPoint until it's totally done.
 - Create your PowerPoint presentation.
   - Suggestion:  Use a template or make a theme that matches your portfolio/etc. branding, same fonts, same colors, etc.
-  - Suggestion:  If you use an avatar for yourself in your presentation instead of the actual video of you, you don't have to worry about where you're looking while talking.  
+  - Suggestion:  If you use an avatar for yourself in your presentation instead of the actual video of you, you don't have to worry about where you're looking while talking.  You may create an avatar at [cartoonify.de](https://www.cartoonify.de) for free.
   - Suggestion:  It might or might not be helpful to have an empty slide at the beginning of the PowerPoint presentation for logistical purposes of clipping video later.  This isn't required to make a good video, but you might find it easier to edit the video if you do include one at the beginning.
 - Paste the script you wrote slide by slide into the notes section of your PowerPoint presentation.  That slide's notes will be visible while your slide show is playing, so you will be able to read from it while recording.
   - Commentary:  When you do the slide show, you'll have your actual slide show on the screen you're sharing and the PowerPoint window with notes showing on the other screen that you are NOT sharing.  Then while you're recording and talking, as you click to go to each next slide, the notes for that slide will automatically be displayed and you can just keep talking w/o having to memorize any of your script.
@@ -44,7 +45,7 @@ I understand anybody might just come across this repo, but if you are a Lambda s
 
 ***IMPORTANT***:  If your computer is not powerful enough to do everything in one swipe, like have all the windows open that you need, record it in smaller chunks and insert one chunk into the other later.  Then you only need to have open what you're actually recording, and you can do it in chunks.
 
-### Recording on Different Platforms
+### Recording
 
 Now we're going to record.  I've done directions for both Zoom and Microsoft Teams since that's what I personally know how to do, but you obviously can use whatever you want.
 
@@ -92,3 +93,7 @@ Now we're going to record.  I've done directions for both Zoom and Microsoft Tea
 - Otherwise, click the three dots and select ```Download Video```.
 
 Now you're ready to edit and compile what you just made!
+
+## Resources for Recording
+
+- You may create an avatar at [cartoonify.de](https://www.cartoonify.de) for free.
