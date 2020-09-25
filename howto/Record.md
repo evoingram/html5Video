@@ -29,7 +29,7 @@ I understand anybody might just come across this repo, but if you are a Lambda s
 
 - ***VERY IMPORTANT***:  Don't put this video in your GitHub repo because GitHub repos only accept files up to 100mb and your video is likely going to be well over that.
 - First, before you write your script or do anything with related to this video, you want to figure out the structure or outline of your video.  You will use the structure/outline to write your script and make your PowerPoint presentation.  
-- Then you can write each respective portion of the script from your outline in any order and won't have the write the script from beginning to end.  It will also keep you organized and focused on time, because you also want to be as concise as possible.
+- Write your script.  Since you did an outline/structure first, you can write each respective portion of the script from your outline in any order and won't have the write the script from beginning to end.  It will also keep you organized and focused on time, because you also want to be as concise as possible.
 - Suggestion:  Write your outline and script in a separate file and don't paste it into the notes section of PowerPoint until it's totally done.
 - Create your PowerPoint presentation.
   - Suggestion:  Use a template or make a theme that matches your portfolio/etc. branding, same fonts, same colors, etc.
